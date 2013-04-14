@@ -173,7 +173,7 @@ bar {
 	position top
 	tray_output DVI-I-2
 	output DVI-I-2
-	status_command $HOME/bin/conky-i3bar.sh
+	status_command conky -c $HOME/.i3/.conkyrc
 }
 bar {
 	position top
