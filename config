@@ -118,7 +118,8 @@ bindsym $mod+Shift+R restart
 bindsym $mod+Shift+E exit
 
 # Starts custom apps
-exec_always dropbox start
+exec_always --no-startup-id  dropbox start
+exec --no-startup-id nitrogen --restore
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
