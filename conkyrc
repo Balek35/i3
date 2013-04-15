@@ -1,0 +1,16 @@
+background        no
+out_to_console 	  yes
+out_to_x	  no
+update_interval	  2
+total_run_times	  0
+short_units	  yes
+pad_percents	  3
+
+override_utf8_locale yes
+
+TEXT
+,[{"full_text": " CPU $acpitemp°C [$cpu%] ","color": "\#DC322F"},
+  {"full_text": " RAM $mem/$memmax ", "color":"\#B58900"},
+  {"full_text": " NET down ${downspeed p3p1} / up ${upspeed p3p1} ", "color":"\#4AC925"},
+  {"full_text": " ${time %a, %d/%m/%Y} ${time %H:%M} "}
+]
