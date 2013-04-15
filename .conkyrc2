@@ -35,5 +35,5 @@ cpu_avg_samples 2
 TEXT
 
 # JSON for i3bar
-${exec ~/Softwares/weather-2.0/weather LFMT --setpath=~/Softwares/weather-2.0 -m | awk '/conditions/ {print $4 " " $5}'} | ${exec ~/Softwares/weather-2.0/weather LFMT --setpath=~/Softwares/weather-2.0 -m | awk '/Temperature/ {print "Temp: " $2 " C"}'} | ${exec ~/Softwares/weather-2.0/weather LFMT --setpath=~/Softwares/weather-2.0 -m | awk '/Humidity/ {print "Humidity: " $3}'
+${exec ~/Softwares/weather-2.0/weather LFMT --setpath=~/Softwares/weather-2.0 -m | awk '/Current conditions/ {print $4 " " $5}'} | ${exec ~/Softwares/weather-2.0/weather LFMT --setpath=~/Softwares/weather-2.0 -m | awk '/Temperature/ {print "Temp: " $2 " C"}'} | ${exec ~/Softwares/weather-2.0/weather LFMT --setpath=~/Softwares/weather-2.0 -m | awk '/Humidity/ {print "Humidity: " $3}'} ${exec ~/Softwares/weather-2.0/weather LFMT --setpath=~/Softwares/weather-2.0 -m | awk '/Sky conditions/ {print "| " $3 " " $4 " " $5 " " $6}'}
 
