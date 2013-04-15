@@ -166,6 +166,8 @@ assign [class="URxvt"] 3
 
 assign [class="Nautilus"] 1
 
+assign [class="Spotify"] 8
+
 bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -174,7 +176,7 @@ bar {
 	position top
 	tray_output DVI-I-2
 	output DVI-I-2
-	status_command conky -c $HOME/.i3/.conkyrc
+	status_command $HOME/.i3/conky
 }
 bar {
 	position top
@@ -186,5 +188,5 @@ bar {
 	tray_output none
 	workspace_buttons no
 	output DVI-I-2
-	status_command conky -c $HOME/.i3/.conkyrc2
+	status_command conky -c $HOME/.i3/conkyrc2
 }
